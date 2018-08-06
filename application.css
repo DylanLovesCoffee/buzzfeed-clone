@@ -1,0 +1,14 @@
+.clickable-img {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  clip: rect(20px,400px,380px,0px);
+}
+
+.clickable-img-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  transition: transform 2s;
+}
