@@ -6,11 +6,23 @@ $(document).ready(function(){
   });
 });
 
-function selectOp1 (){
-  // add opacity or fade
-  console.log('Option 1!')
+// apply opacity to everything but the chosen option
+function selectOption(option){
+  findSiblings(option.parentNode.parentNode.children, option.parentNode)
 }
 
-function selectOp2 (){
-  console.log('Option 2!')
+// check if there are sibling nodes, and then return the option index
+function findSiblings(nodeSiblings, node) {
+  var nodes = Array.prototype.slice.call(nodeSiblings);
+  i = 0;
+  while (nodes[i] != null) {
+    if (nodes[i] == node) {
+      var nodeIndex = i;
+      nodes[i].style.opacity = "1";
+    } else {
+      nodes[i].style.opacity = "0.5";
+    }
+    i++;
+  }
+  return nodeIndex
 }
