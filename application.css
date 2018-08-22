@@ -2,7 +2,7 @@
   width: 400px;
   height: auto;
   position: absolute;
-  clip: rect(20px,400px,380px,0px);
+  clip: rect(30px,400px,370px,0px);
 }
 
 .clickable-img-container {
@@ -11,4 +11,11 @@
   height: 400px;
   display: inline-block;
   transition: transform 2s;
+}
+
+header {
+  padding: 3em;
+  background-color: cyan;
+  text-align: center;
+  color: white;
 }

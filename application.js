@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.clickable-img').hover(function(){
-    $(this).css({"transform": "scale(1.1)"});
+    $(this).css({"transform": "scale(1.08)"});
   }, function(){
     $(this).css({"transform": "scale(1)"});
   });
@@ -26,3 +26,5 @@ function findSiblings(nodeSiblings, node) {
   }
   return nodeIndex
 }
+
+// need a data store for the option indexes, and then returns a quiz answer
